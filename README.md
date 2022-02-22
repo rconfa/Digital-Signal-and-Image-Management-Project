@@ -8,8 +8,8 @@
 # Overview
 The project consists in the development of an application for the recognition of one-dimensional signals (audio) and two-dimensional signals (images). Specifically we have developed three different task:
 
-* Processing-1D: Recognize the identity of the group member starting from a two-second audio with ML and DL models 
-* Processing-2D: Recognize the identity of the group member starting from an image with ML and DL models 
+* Processing-1D: Recognize the identity of the group member starting from a two-second audio with ML and DL models. For solve this task we have tried different models and different configuration of features (zero crossing rate, standard deviation, mfcc, spectrogram, etc...)
+* Processing-2D: Recognize the identity of the group member starting from an image with DL models. In this case we tried different pretrained architecture with weights based on general task (ImageNet) and on face recognition task (VGGFace).
 * Retrieval: Find the ten most famous VIP faces for each member of the group 
 
 # Data
