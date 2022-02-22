@@ -37,12 +37,33 @@ If you need the <b>trained models</b> that we implemented please feel free to <i
 
 # How to run code
 Unless otherwise specified in the notebook section all codes can be runned in [Google Colaboratory](https://colab.research.google.com/) platform. All notebooks all already setted to import the necessary packages and also in this way you can easily use a GPU! <br>
+
 Unfortunately for the notebook that performs live demo and automatic acquisition you will need to use local environment because their required cams and microphone, for this notebook you need to install all the packages reported in the requirements file that you can find in each different folder. <br>
 Anyway if you have any problem just contact me for further information!
 
+# Results Table
+Comparative result of models based on test set created by subsampling the original dataset:
+
+* Processing-1D: The first three models used the mfcc features, while the last CNN model use spectrogram image
+
+   | Architectures | Accuracy | Precision | Recall | F1-score |
+   | ----- | ----------- | ------------ | -------------- | --------------- |
+   | SVM | 0.83 | 0.83 | 0.83 | 0.83 |
+   | RandomForest| 0.81 | 0.86 | 0.81 | 0.82 |
+   | **CNN** | 0.97 | 0.97 | 0.97 | **0.97** |
+   | CNN on spectrogram | 0.88 | 0.88 | 0.88 | 0.88 |
+   
+* Processing-2D:
+
+   | Architectures | Accuracy | Precision | Recall | F1-score |
+   | ----- | ----------- | ------------ | -------------- | --------------- |
+   | VGG16 | 0.94 | 0.94 | 0.95 | 0.94 |
+   | MobileNet-V2 | 0.98 | 0.98 | 0.98 | 0.98 |
+   | **VGGFace** | 1.00 | 1.00 | 1.00 | **1.00** |
+
 # References
 [1] S. Bianco, “Dispense e slide del corso digital signal and image management” 2021. <br>
-[2] O. M. Parkhi, A. Vedaldi, and A. Zisserman, “Deep face recognition", 2015 <br>.
+[2] O. M. Parkhi, A. Vedaldi, and A. Zisserman, “Deep face recognition", 2015.
 
 # About us
 
